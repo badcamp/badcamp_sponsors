@@ -1,0 +1,14 @@
+{
+  "name": "badcamp/badcamp_sponsors",
+  "type": "drupal-module",
+  "description": "A Features module that contains all of the configuration related to sponsors.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/badcamp/badcamp_sponsors",
+  "minimum-stability": "dev-master",
+  "support": {
+    "issues": "https://github.com/badcamp/badcamp_sponsors",
+    "source": "https://github.com/badcamp/badcamp_sponsors.git"
+  },
+  "require": { }
+}
