@@ -5,7 +5,7 @@
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
   "homepage": "https://github.com/badcamp/badcamp_sponsors",
-  "minimum-stability": "dev-master",
+  "minimum-stability": "dev",
   "support": {
     "issues": "https://github.com/badcamp/badcamp_sponsors",
     "source": "https://github.com/badcamp/badcamp_sponsors.git"
