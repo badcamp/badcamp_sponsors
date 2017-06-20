@@ -7,7 +7,7 @@ dependencies:
     - taxonomy.vocabulary.sponsor_level
     - user.role.administrator
   content:
-    - 'taxonomy_term:sponsor_level:69839018-717f-4379-af51-875a7efe00d9'
+    - 'taxonomy_term:sponsor_level:d31e8168-12ae-4760-ad90-655509b07e5a'
   module:
     - node
     - taxonomy

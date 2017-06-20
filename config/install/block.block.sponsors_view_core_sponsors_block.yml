@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.badcamp_sponsors_view
+  module:
+    - views
+  theme:
+    - badcamp2017
+id: sponsors_view_core_sponsors_block
+theme: badcamp2017
+region: footer
+weight: 0
+provider: null
+plugin: 'views_block:badcamp_sponsors_view-core_sponsors_block'
+settings:
+  id: 'views_block:badcamp_sponsors_view-core_sponsors_block'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
