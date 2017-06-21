@@ -60,7 +60,7 @@ display:
       style:
         type: default
         options:
-          row_class: ''
+          row_class: sponsor
           default_row_class: false
           uses_fields: false
       row:
@@ -192,6 +192,7 @@ display:
         sorts: false
         filters: false
         filter_groups: false
+        css_class: false
       display_description: ''
       filters:
         status:
@@ -262,6 +263,7 @@ display:
         operator: AND
         groups:
           1: AND
+      css_class: core-sponsors-block
     cache_metadata:
       max-age: 0
       contexts:
