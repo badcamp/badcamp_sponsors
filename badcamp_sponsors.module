@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function badcamp_sponsors_theme(){
+  $theme['node__badcamp_sponsor__image_only'] = [
+    'template' => 'node--badcamp-sponsor--image-only'
+  ];
+
+  return $theme;
+}
