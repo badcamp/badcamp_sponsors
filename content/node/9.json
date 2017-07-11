@@ -1,0 +1,201 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sponsor\/hook42?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/badcamp_sponsor"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/uid": [
+            {
+                "href": "http:\/\/default\/user\/6?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/6?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/field_sponsor_level": [
+            {
+                "href": "http:\/\/default\/sponsorship-level\/contrib-level?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/field_sponsor_logo": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/sponsor_logos\/Hook42-Logo-Web-Large.png"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 9
+        }
+    ],
+    "uuid": [
+        {
+            "value": "1305b1f0-3161-4c1e-8df5-43990b779c74"
+        }
+    ],
+    "vid": [
+        {
+            "value": 24
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "badcamp_sponsor"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Hook42",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5ea294ee-04d0-44e8-8bf6-426a4b071d56"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5ea294ee-04d0-44e8-8bf6-426a4b071d56"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/field_sponsor_level": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sponsorship-level\/contrib-level?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/sponsor_level"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "fe79c574-5194-4125-b7c8-dfecf26407fb"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/field_sponsor_logo": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/sponsor_logos\/Hook42-Logo-Web-Large.png"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "d7ddf845-8746-45a0-83d5-1d8b6b5c901a"
+                    }
+                ],
+                "uri": [
+                    {
+                        "value": "http:\/\/default\/sites\/default\/files\/sponsor_logos\/Hook42-Logo-Web-Large.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1495667322,
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1499625777,
+            "lang": "en"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": 1499625777
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Hook 42 is a women-owned agency founded by web industry veterans, Aimee&nbsp; Degnan and Kristen Pol. We focus on Drupal development, multilingual websites, SEO, and CMS migrations.&nbsp;<\/p>\r\n\r\n<p>Our team of web developers and technologists have over a century of combined experience across many technologies; however, we focus on a smaller number of services offerings in order to consistently deliver high-quality results. We pride ourself on being a highly ethical, high-touch, and empathetic organization that truly cares about our clients and projects.&nbsp;<\/p>\r\n\r\n<p>In addition to our client work, we are a community-focused company that invests non-billable time towards contributing back to the open-source community. We are Drupal core contributors and regular speakers at technical user groups, camps, and conferences.&nbsp;<\/p>\r\n\r\n<p>Find out more about our team at&nbsp;<a href=\"http:\/\/hook42.com\/team\">hook42.com\/team<\/a>.<\/p>\r\n",
+            "format": "basic_html",
+            "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "http:\/\/www.hook42.com\/",
+            "title": "Hook42",
+            "options": []
+        }
+    ]
+}
