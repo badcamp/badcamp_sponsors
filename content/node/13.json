@@ -1,0 +1,201 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/sponsor\/amazeeio?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/badcamp_sponsor"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/uid": [
+            {
+                "href": "http:\/\/default\/user\/6?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/6?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/field_sponsor_level": [
+            {
+                "href": "http:\/\/default\/sponsorship-level\/contrib-level?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/field_sponsor_logo": [
+            {
+                "href": "http:\/\/default\/sites\/default\/files\/sponsor_logos\/amazeeio_icon_no_border_1000.png"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 13
+        }
+    ],
+    "uuid": [
+        {
+            "value": "50c7fc14-2b9e-438c-b011-66b34c687c20"
+        }
+    ],
+    "vid": [
+        {
+            "value": 23
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "badcamp_sponsor"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Amazee.io",
+            "lang": "en"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5ea294ee-04d0-44e8-8bf6-426a4b071d56"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5ea294ee-04d0-44e8-8bf6-426a4b071d56"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/field_sponsor_level": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sponsorship-level\/contrib-level?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/sponsor_level"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "fe79c574-5194-4125-b7c8-dfecf26407fb"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/badcamp_sponsor\/field_sponsor_logo": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/sites\/default\/files\/sponsor_logos\/amazeeio_icon_no_border_1000.png"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "095ebfed-2b57-4a7d-90b6-d370c346e293"
+                    }
+                ],
+                "uri": [
+                    {
+                        "value": "http:\/\/default\/sites\/default\/files\/sponsor_logos\/amazeeio_icon_no_border_1000.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "created": [
+        {
+            "value": 1499624895,
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1499625632,
+            "lang": "en"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": 1499625632
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<h2>Drupal Hosting for Developers<\/h2>\r\n\r\n<h2>Host where you want<\/h2>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>Host with our existing cloud providers or let our team set up&nbsp;<a href=\"http:\/\/amazee.io\/\">amazee.io<\/a>&nbsp;on your server of choice, no matter where the machine lives \u2014 even in your client's data center.<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/p>\r\n\r\n<h3>Develop locally<\/h3>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>We provide a Docker-based local development environment that is 100% congruent with the production servers. This frees you from all the hassle that comes with different versions or configurations.<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/p>\r\n\r\n<h3>Pay for what you use&nbsp;<\/h3>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>Do not worry about CPU, RAM or other technical terms. Enjoy the speed and security of&nbsp;<a href=\"http:\/\/amazee.io\/\">amazee.io<\/a>. Our pricing is based on the hits on your site \u2014 true cloud pricing where you pay for what you use.<\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/span><\/p>\r\n",
+            "format": "basic_html",
+            "summary": "",
+            "lang": "en"
+        }
+    ],
+    "field_link": [
+        {
+            "uri": "https:\/\/www.amazee.io\/",
+            "title": "amazee",
+            "options": []
+        }
+    ]
+}
