@@ -1,0 +1,73 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/3?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/basic"
+        }
+    },
+    "id": [
+        {
+            "value": 3
+        }
+    ],
+    "uuid": [
+        {
+            "value": "d7696fb2-6abe-4b3b-9788-b1700eab792f"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 3
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "basic"
+        }
+    ],
+    "info": [
+        {
+            "value": "BADCamp Sponsors Text",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": 1500018802,
+            "lang": "en"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": 1498321536
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies ex vitae nunc luctus, nec sodales urna ornare. Phasellus iaculis, arcu vitae placerat blandit, lectus nisl pellentesque metus, sit amet sagittis nisi quam ac augue. Nulla dignissim arcu nulla, eu viverra sem auctor vel. Vivamus elementum lacinia tempus. Nam vel accumsan dolor. Vestibulum euismod vulputate eleifend. Integer vestibulum quam eget ligula elementum blandit a non odio. Nam tempus augue lacinia nulla tempus bibendum. Praesent luctus libero orci, et placerat lorem dignissim sit amet.<\/p>\r\n",
+            "format": "basic_html",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}
