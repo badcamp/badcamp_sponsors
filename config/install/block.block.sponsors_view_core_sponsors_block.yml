@@ -1,13 +1,15 @@
-uuid: 64704448-0121-4d5d-b14a-b04f0af7bb64
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.badcamp_sponsors_view
   module:
+    - system
     - views
   theme:
     - badcamp2017
+_core:
+  default_config_hash: KV-Re51C2D89HNAwFmDpcVX9QIf_aTeqL0V8XtuaD08
 id: sponsors_view_core_sponsors_block
 theme: badcamp2017
 region: footer
@@ -21,4 +23,9 @@ settings:
   label_display: '0'
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /sponsors
+    negate: true
+    context_mapping: {  }

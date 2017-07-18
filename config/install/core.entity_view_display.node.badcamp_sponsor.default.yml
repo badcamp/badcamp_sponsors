@@ -1,4 +1,3 @@
-uuid: d9db0ef1-caa9-4b3a-ba41-d518a3236f43
 langcode: en
 status: true
 dependencies:
@@ -14,7 +13,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: sL-1ZVOvGthe4xlNgm4UktMeUQQEWOb_l4ZtDyqwtPA
+  default_config_hash: D1HgTO2pp1DOyKBsmLJHkT7svBPa586ZdHHWb0vUuC4
 id: node.badcamp_sponsor.default
 targetEntityType: node
 bundle: badcamp_sponsor
