@@ -22,5 +22,5 @@ default_content:
   block_content:
     - d7696fb2-6abe-4b3b-9788-b1700eab792f
 
-version: 8.x-1.0-dev5
+version: 8.x-1.0-dev6
 package: BADCamp
