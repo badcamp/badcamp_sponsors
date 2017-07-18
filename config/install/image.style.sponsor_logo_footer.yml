@@ -1,6 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: ssN_sim7wRei4YUNYUZ3xFr4NTV3g4IkA_pSDPYPivc
 name: sponsor_logo_footer
 label: 'Sponsor Logo Footer'
 effects:

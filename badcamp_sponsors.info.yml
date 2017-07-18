@@ -20,8 +20,12 @@ dependencies:
   - text
   - user
   - views
+<<<<<<< HEAD
 default_content:
   block_content:
     - d7696fb2-6abe-4b3b-9788-b1700eab792f
+=======
+
+>>>>>>> 7a663dea06ffc90eb300a23257c798a2276d1919
 version: 8.x-1.0-dev7
 package: BADCamp

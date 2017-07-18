@@ -4,6 +4,8 @@ dependencies:
   module:
     - ctools
     - taxonomy
+_core:
+  default_config_hash: jDUIpPFgTgCBHvVMeJS7_MwogIoQszNk47M9QTfCrd8
 id: sponsorship_level
 label: 'Sponsorship level'
 type: 'canonical_entities:taxonomy_term'

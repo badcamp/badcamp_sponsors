@@ -8,6 +8,8 @@ dependencies:
     - views
   theme:
     - badcamp2017
+_core:
+  default_config_hash: KV-Re51C2D89HNAwFmDpcVX9QIf_aTeqL0V8XtuaD08
 id: sponsors_view_core_sponsors_block
 theme: badcamp2017
 region: footer

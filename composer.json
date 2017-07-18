@@ -9,8 +9,5 @@
   "support": {
     "issues": "https://github.com/badcamp/badcamp_sponsors",
     "source": "https://github.com/badcamp/badcamp_sponsors.git"
-  },
-  "require": {
-    "drupal/default_content": "^1.0"
   }
 }
