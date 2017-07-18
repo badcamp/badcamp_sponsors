@@ -11,6 +11,7 @@ dependencies:
     - node.type.badcamp_sponsor
   module:
     - image
+    - link
     - text
     - user
 _core:
@@ -23,13 +24,25 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_link:
+    type: link
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
   field_sponsor_level:
-    weight: 2
-    label: above
+    weight: 3
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
@@ -45,9 +58,8 @@ content:
     type: image
     region: content
   links:
-    weight: 3
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden:
-  field_link: true
+hidden: {  }
