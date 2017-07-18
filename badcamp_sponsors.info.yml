@@ -4,9 +4,7 @@ type: module
 core: 8.x
 dependencies:
   - block
-  - config_split
   - ctools
-  - default_content
   - field
   - file
   - image
@@ -21,5 +19,5 @@ dependencies:
   - user
   - views
 
-version: 8.x-1.0-dev7
+version: 8.x-1.0-dev8
 package: BADCamp
