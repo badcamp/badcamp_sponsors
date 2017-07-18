@@ -1,4 +1,3 @@
-uuid: ff7ffb40-d40a-4dc1-9449-648649439fd0
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - file
     - image
     - node
-_core:
-  default_config_hash: rZa-vZ3v688fK0oZny0c5ZzUdTX8jk54ON0_7oItnYQ
 id: node.field_sponsor_logo
 field_name: field_sponsor_logo
 entity_type: node

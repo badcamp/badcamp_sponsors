@@ -1,4 +1,3 @@
-uuid: 83dd09be-e3c1-498b-9e6a-cd8ad86ee791
 langcode: en
 status: true
 dependencies:
@@ -9,8 +8,6 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-_core:
-  default_config_hash: G9x7Riug0Cx_TXIQNtMxGRCPWtnV3r7lIDQ_7ZlN4Jw
 name: Sponsor
 type: badcamp_sponsor
 description: 'A generous organization that makes our camp possible.'

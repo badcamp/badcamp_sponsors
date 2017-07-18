@@ -1,2 +1,6 @@
 bundle: badcamp
+excluded:
+  - config_split.config_split.badcamp_sponsors
+  - field.storage.node.field_link
+  - core.entity_view_mode.node.image_only
 required: true

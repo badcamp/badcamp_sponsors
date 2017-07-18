@@ -1,4 +1,3 @@
-uuid: f74117c3-dcbf-46c9-97e4-de9344a4c2ae
 langcode: en
 status: true
 dependencies:
@@ -7,8 +6,6 @@ dependencies:
     - node.type.badcamp_sponsor
   module:
     - text
-_core:
-  default_config_hash: yccLJA7lsBZdsmGXW1G3N3Qu0u8JsDVTUC_Wzqo-1K0
 id: node.badcamp_sponsor.body
 field_name: body
 entity_type: node
