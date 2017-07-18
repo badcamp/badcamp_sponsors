@@ -1,8 +1,11 @@
+uuid: 66eeb460-d401-4249-bcbe-f6a55916cf12
 langcode: en
 status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: s3qByAfx5u-MgMbkeXkJxMcA-iCUXaniOnDVBTNzdQc
 id: sponsor
 label: Sponsor
 type: 'canonical_entities:node'

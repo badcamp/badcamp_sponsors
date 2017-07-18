@@ -1,10 +1,10 @@
+uuid: 1dca21e2-cbe9-471a-8ee3-d02b362cb1b4
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.badcamp_sponsor.body
-    - field.field.node.badcamp_sponsor.field_link
     - field.field.node.badcamp_sponsor.field_sponsor_level
     - field.field.node.badcamp_sponsor.field_sponsor_logo
     - image.style.large
@@ -13,6 +13,8 @@ dependencies:
     - image
     - text
     - user
+_core:
+  default_config_hash: xlivRV-Ap3xrdyvglw3dHJ22Gmv4S7LEPM-zfv0vGjM
 id: node.badcamp_sponsor.full
 targetEntityType: node
 bundle: badcamp_sponsor

@@ -1,3 +1,4 @@
+uuid: 3c9eb752-3c2b-4f10-8a59-f7b92aec6226
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.badcamp_sponsor
   module:
     - image
+_core:
+  default_config_hash: 8ZzgTPU1x-SamV7SEu6rB3ABIHWhDxfxrwN7IZTdefM
 id: node.badcamp_sponsor.field_sponsor_logo
 field_name: field_sponsor_logo
 entity_type: node

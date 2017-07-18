@@ -1,17 +1,21 @@
+uuid: 9bac7a57-22cb-4695-9f72-251677a492c7
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.image_only
-    - field.storage.node.field_sponsor_level
+    - field.storage.node.field_link
     - node.type.badcamp_sponsor
     - taxonomy.vocabulary.sponsor_level
+    - user.role.administrator
   content:
     - 'taxonomy_term:sponsor_level:d31e8168-12ae-4760-ad90-655509b07e5a'
   module:
+    - link
     - node
     - taxonomy
     - user
+_core:
+  default_config_hash: r4aDO9n_ReSBT9M0r_r-sIKJPz-mK71SfrLMej-Kw4w
 id: badcamp_sponsors_view
 label: Sponsors
 module: views
@@ -60,15 +64,22 @@ display:
       style:
         type: default
         options:
+          grouping: {  }
           row_class: sponsor
           default_row_class: false
-          uses_fields: false
       row:
-        type: 'entity:node'
+        type: fields
         options:
-          relationship: none
-          view_mode: image_only
-      fields: {  }
+          default_field_elements: false
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      fields:
+        field_link:
+          id: field_link
+          table: node__field_link
+          field: field_link
+          plugin_id: field
       filters:
         status:
           value: '1'
@@ -112,13 +123,16 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: sponsors-view
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.field_link'
   core_sponsors_block:
     display_plugin: block
     id: core_sponsors_block
@@ -144,7 +158,10 @@ display:
         sorts: false
         filters: false
         filter_groups: false
+        fields: false
+        footer: false
         css_class: false
+        header: false
       display_description: ''
       filters:
         status:
@@ -215,116 +232,32 @@ display:
         operator: AND
         groups:
           1: AND
-      css_class: core-sponsors-block
-    cache_metadata:
-      max-age: 0
-      contexts:
-        - 'languages:language_interface'
-        - user
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
-    position: 1
-    display_options:
-      display_extenders: {  }
-      path: sponsors
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      defaults:
-        access: false
-        relationships: false
-        sorts: false
-        style: false
-        row: false
-        fields: false
-      relationships:
-        field_sponsor_level:
-          id: field_sponsor_level
-          table: node__field_sponsor_level
-          field: field_sponsor_level
-          relationship: none
-          group_type: group
-          admin_label: 'field_sponsor_level: Taxonomy term'
-          required: false
-          plugin_id: standard
-      sorts:
-        weight:
-          id: weight
-          table: taxonomy_term_field_data
-          field: weight
-          relationship: field_sponsor_level
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          entity_type: taxonomy_term
-          entity_field: weight
-          plugin_id: standard
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          order: ASC
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-      style:
-        type: default
-        options:
-          grouping:
-            -
-              field: field_sponsor_level
-              rendered: true
-              rendered_strip: false
-          row_class: sponsor
-          default_row_class: false
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
       fields:
-        field_sponsor_level:
-          id: field_sponsor_level
-          table: node__field_sponsor_level
-          field: field_sponsor_level
+        field_link:
+          id: field_link
+          table: node__field_link
+          field: field_link
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
+            alter_text: true
+            text: '{{ field_link__title }}'
+            make_link: true
+            path: '{{ field_link__uri }}'
             absolute: false
             external: false
             replace_spaces: false
             path_case: none
             trim_whitespace: false
-            alt: ''
+            alt: '{{ field_link__title }}'
             rel: ''
-            link_class: ''
+            link_class: '{{ field_link__title }}'
             prefix: ''
             suffix: ''
-            target: ''
+            target: _blank
             nl2br: false
             max_length: 0
             word_boundary: true
@@ -336,23 +269,27 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: '0'
           element_class: ''
-          element_label_type: ''
+          element_label_type: '0'
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
+          element_wrapper_type: '0'
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: uri
+          type: link
           settings:
-            link: false
-          group_column: target_id
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -363,76 +300,63 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        rendered_entity:
-          id: rendered_entity
-          table: node
-          field: rendered_entity
+      footer:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
           relationship: none
           group_type: group
           admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          view_mode: image_only
-          entity_type: node
-          plugin_id: rendered_entity
+          empty: false
+          tokenize: false
+          content: 'Built by the community with <a href="https://www.drupal.org/" target="_blank">Drupal</a> and hosted on <a href="https://pantheon.io/" target="_blank">Pantheon</a>.'
+          plugin_id: text_custom
+      css_class: core-sponsors-block
+      block_category: Block
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: '<h2>Sponsors</h2>'
+          plugin_id: text_custom
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_link'
+  sponsors_page:
+    display_plugin: page
+    id: sponsors_page
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: sponsors
+      access:
+        type: role
+        options:
+          role:
+            administrator: administrator
+      defaults:
+        access: false
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
-        - 'config:core.entity_view_display.node.article.default'
-        - 'config:core.entity_view_display.node.article.rss'
-        - 'config:core.entity_view_display.node.article.teaser'
-        - 'config:core.entity_view_display.node.badcamp_sponsor.default'
-        - 'config:core.entity_view_display.node.badcamp_sponsor.full'
-        - 'config:core.entity_view_display.node.badcamp_sponsor.image_only'
-        - 'config:core.entity_view_display.node.badcamp_sponsor.teaser'
-        - 'config:core.entity_view_display.node.blog.default'
-        - 'config:core.entity_view_display.node.blog.teaser'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
-        - 'config:core.entity_view_display.node.program_details.default'
-        - 'config:core.entity_view_display.node.program_details.teaser'
-        - 'config:field.storage.node.field_sponsor_level'
+        - 'config:field.storage.node.field_link'

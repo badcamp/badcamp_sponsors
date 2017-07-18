@@ -1,3 +1,4 @@
+uuid: 6646e491-2719-4d02-912f-57b39419b60a
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.storage.node.field_sponsor_level
     - node.type.badcamp_sponsor
     - taxonomy.vocabulary.sponsor_level
+_core:
+  default_config_hash: HgTXM_K21QjRU9N0IrZdu6o1CpAa_3tISLhN9KNJZxc
 id: node.badcamp_sponsor.field_sponsor_level
 field_name: field_sponsor_level
 entity_type: node
