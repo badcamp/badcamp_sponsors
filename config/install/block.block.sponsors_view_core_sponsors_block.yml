@@ -8,12 +8,10 @@ dependencies:
     - views
   theme:
     - badcamp2017
-_core:
-  default_config_hash: KV-Re51C2D89HNAwFmDpcVX9QIf_aTeqL0V8XtuaD08
 id: sponsors_view_core_sponsors_block
 theme: badcamp2017
 region: footer
-weight: 0
+weight: -12
 provider: null
 plugin: 'views_block:badcamp_sponsors_view-core_sponsors_block'
 settings:
@@ -26,6 +24,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /sponsors
-    negate: true
+    pages: '*'
+    negate: false
     context_mapping: {  }
