@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - field.field.node.badcamp_sponsor.body
-    - field.field.node.badcamp_sponsor.field_link
+    - field.field.node.badcamp_sponsor.field_sponsor_link
     - field.field.node.badcamp_sponsor.field_sponsor_level
     - field.field.node.badcamp_sponsor.field_sponsor_logo
     - node.type.badcamp_sponsor
@@ -24,7 +24,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_link:
+  field_sponsor_link:
     weight: 104
     label: above
     settings:

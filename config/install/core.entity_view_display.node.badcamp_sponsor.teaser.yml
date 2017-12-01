@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.badcamp_sponsor.body
-    - field.field.node.badcamp_sponsor.field_link
+    - field.field.node.badcamp_sponsor.field_sponsor_link
     - field.field.node.badcamp_sponsor.field_sponsor_level
     - field.field.node.badcamp_sponsor.field_sponsor_logo
     - image.style.thumbnail
@@ -36,6 +36,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_link: true
+  field_sponsor_link: true
   field_sponsor_level: true
   links: true

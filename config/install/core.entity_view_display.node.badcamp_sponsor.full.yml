@@ -4,7 +4,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.badcamp_sponsor.body
-    - field.field.node.badcamp_sponsor.field_link
+    - field.field.node.badcamp_sponsor.field_sponsor_link
     - field.field.node.badcamp_sponsor.field_sponsor_level
     - field.field.node.badcamp_sponsor.field_sponsor_logo
     - image.style.large
@@ -31,7 +31,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_link:
+  field_sponsor_link:
     type: link
     weight: 2
     region: content
